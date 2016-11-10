@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="scotchApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- SCROLLS -->
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/css/font-awesome.min.css" />
+    <!-- <link href="dist/css/angular-carousel.min.css" rel="stylesheet" type="text/css" /> -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link type="text/css" rel="stylesheet" href="dist/css/bootstrap.min.css" media="screen,projection" /> -->
+    <link rel="stylesheet" href="dist/css/bundle.min.css">
+
+    <!-- SPELLS -->
+    <script src='dist/js/jquery.min.js'></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/angular.min.js"></script>
+    <script src="dist/js/angular-route.min.js"></script>
+    <!-- <script src="dist/js/angular-touch.min.js"></script> -->
+    <!-- <script src="dist/js/angular-carousel.min.js"></script> -->
+
+</head>
+
+<!-- define angular controller -->
+
+<body ng-controller="mainController">
+
+
+
+
+        <!-- angular templating -->
+        <!-- this is where content will be injected -->
+        <div ng-view></div>
+
+    </div>
+
+    <footer class="text-center">
+
+    </footer>
+
+    <script type="text/javascript">
+    $(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        $(".side-nav .collapse").on("hide.bs.collapse", function() {
+            $(this).prev().find(".fa").eq(1).removeClass("fa-angle-right").addClass("fa-angle-down");
+        });
+        $('.side-nav .collapse').on("show.bs.collapse", function() {
+            $(this).prev().find(".fa").eq(1).removeClass("fa-angle-down").addClass("fa-angle-right");
+        });
+        
+    })
+
+    </script>
+<script src="dist/js/script.min.js"></script>
+</body>
+
+</html>
