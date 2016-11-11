@@ -1,4 +1,4 @@
 scotchApp.controller('mainController', function ($scope) {
-    $scope.message = 'hello';
+    $scope.message = 'Добро пожаловать.';
 
 });

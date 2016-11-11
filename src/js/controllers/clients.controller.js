@@ -1,4 +1,4 @@
 scotchApp.controller('clientsController', function ($scope) {
-    $scope.message = 'clients';
+    $scope.message = 'Клиенты';
 
 });
