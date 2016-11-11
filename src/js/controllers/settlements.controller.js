@@ -1,4 +1,4 @@
 scotchApp.controller('settlementsController', function ($scope) {
-    $scope.message = 'settlement';
+    $scope.message = 'Поселения';
 
 });

@@ -115,5 +115,5 @@ gulp.task('bower', function() {
 
 gulp.task('watch', function() {
     gulp.watch('src/css/*.sass', ['sass']);
-    gulp.watch('src/js/*.js', ['js']);
+    gulp.watch('src/js/**/*.js', ['js']);
 });
